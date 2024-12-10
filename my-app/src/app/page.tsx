@@ -15,7 +15,7 @@ export default function Home() {
     const boing = document.getElementById("boing-audio");
     const canufell = document.getElementById("canufell-audio");
     });
-  }, [ruidoVolume, ruido2Volume, boingVolume, canufellVolume]);
+  }, []);
 
   return (
     <div className={styles.container}>
