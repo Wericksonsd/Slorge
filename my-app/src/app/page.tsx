@@ -14,15 +14,6 @@ export default function Home() {
     const ruido2 = document.getElementById("ruido2-audio");
     const boing = document.getElementById("boing-audio");
     const canufell = document.getElementById("canufell-audio");
-
-    // Força os áudios a tocar
-    const audios = [ruido, ruido2, boing, canufell];
-    audios.forEach((audio) => {
-      if (audio) {
-        audio.play().catch((error) => {
-          console.warn("Reprodução bloqueada pelo navegador:", error);
-        });
-      }
     });
   }, [ruidoVolume, ruido2Volume, boingVolume, canufellVolume]);
 
