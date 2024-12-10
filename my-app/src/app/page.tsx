@@ -15,12 +15,6 @@ export default function Home() {
     const boing = document.getElementById("boing-audio");
     const canufell = document.getElementById("canufell-audio");
 
-    // Define os volumes iniciais
-    if (ruido) ruido.volume = ruidoVolume;
-    if (ruido2) ruido2.volume = ruido2Volume;
-    if (boing) boing.volume = boingVolume;
-    if (canufell) canufell.volume = canufellVolume;
-
     // Força os áudios a tocar
     const audios = [ruido, ruido2, boing, canufell];
     audios.forEach((audio) => {
